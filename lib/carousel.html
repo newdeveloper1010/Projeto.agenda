@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css" />
+</head>
+<body>
+    <div class="Carousel slide" data-ride="carousel">
+        <div class="Carousel-inner">
+            <div class="Carousel-item active">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/04/01/12/16/car-1300629_1280.png" alt="first slide">
+            </div>
+            <div data-bs-interval="3000" class="Carousel-item ">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/03/02/16/54/iceland-2111811_1280.jpg" alt="second slide">
+            </div>
+            <div data-bs-interval="3000" class="Carousel-item ">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/02/09/19/57/aurora-1190254_1280.jpg" alt="third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+        </div>
+    </div>
+    <script src="cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+<script>
+    $('.carousel').carousel({
+  interval: 2000
+})
+</script>
+</body>
+</html>
